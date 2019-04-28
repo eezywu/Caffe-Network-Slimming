@@ -7,7 +7,7 @@ Merge the two folders into your `$(CAFFE_HOME)`.
 
 ## Attention
 
-  1. You'd better back up your own files first. And after merging the files, you should manually modify the code in `$(CAFFE_HOME)/src/caffe/proto/caffe.proto` as follows. 
+  - You'd better back up your own files first. And after merging the files, you should manually modify the code in `$(CAFFE_HOME)/src/caffe/proto/caffe.proto` as follows. 
 ```
 message ScaleParameter {
   optional int32 axis = 1 [default = 1];
@@ -20,7 +20,7 @@ message ScaleParameter {
 ```
 I didn't directly upload the `caffe.proto`, because the file is likely to contain your own modifications, and you need to be careful to replace it.
 
-  2. After that, run `make -j4` under your `$(CAFFE_HOME)`.
+  - After that, run `make -j4` under your `$(CAFFE_HOME)`.
 ## Application example
 ```
 layer {
