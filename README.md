@@ -2,8 +2,11 @@
 This repository is the caffe re-implementation for the following paper  
 [Learning Efficient Convolutional Networks Through Network Slimming](http://openaccess.thecvf.com/content_iccv_2017/html/Liu_Learning_Efficient_Convolutional_ICCV_2017_paper.html) (ICCV 2017).
 
+## Usage
+Merge the two folders into your `$(CAFFE_HOME)`. 
+
 ## Attention
-You should manually modify the code in `$(CAFFE_HOME)/src/caffe/proto/caffe.proto` as follows. 
+You'd better back up your own files first. And after merging the files, you should manually modify the code in `$(CAFFE_HOME)/src/caffe/proto/caffe.proto` as follows. 
 ```
 message ScaleParameter {
   optional int32 axis = 1 [default = 1];
