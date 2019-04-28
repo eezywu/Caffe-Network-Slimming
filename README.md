@@ -1,7 +1,11 @@
-# Network Slimming for Caffe
-Network Slimming (Caffe) (ICCV 2017)
+# A Caffe Re-Implementation of Network Slimming
+This repository is the caffe re-implementation for the following paper  
+[Learning Efficient Convolutional Networks Through Network Slimming](http://openaccess.thecvf.com/content_iccv_2017/html/Liu_Learning_Efficient_Convolutional_ICCV_2017_paper.html) (ICCV 2017).
 
-Application example
+## Note
+You should add `optional float l1_lambda = 6 [default = 1e-9];` to in the the field of `message ScaleParameter` in `$(CAFFE_HOME)/src/caffe/proto/caffe.proto` file. I don't directly upload the `caffe.proto` because this file is likely to contain your other modification and shouldn't be replaced.
+
+## Application example
 ```
 layer {
   name: "conv1/scale"
@@ -21,3 +25,5 @@ layer {
 }
 ```
 
+## Contact
+eezywu@gmail.com
