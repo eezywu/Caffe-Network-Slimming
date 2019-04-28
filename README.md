@@ -18,6 +18,7 @@ message ScaleParameter {
   optional float l1_lambda = 6 [default = 1e-9];  // The code that you need to add manually.
  }
 ```
+
   I didn't directly upload the `caffe.proto`, because the file is likely to contain your own modifications, and you need to be careful to replace it.
 
   - After that, run `make -j4` under your `$(CAFFE_HOME)`.
