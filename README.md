@@ -1,6 +1,7 @@
 # A Caffe Re-Implementation of Network Slimming
 This repository is the caffe re-implementation for the following paper  
 [Learning Efficient Convolutional Networks Through Network Slimming](http://openaccess.thecvf.com/content_iccv_2017/html/Liu_Learning_Efficient_Convolutional_ICCV_2017_paper.html) (ICCV 2017).
+
 I have applied this method to prune MobileNet v2 in [Pruned-MobileNet_v2](https://github.com/eezywu/Pruned-MobileNet_v2).
 
 ## Usage
